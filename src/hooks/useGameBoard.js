@@ -81,7 +81,7 @@ export function useGameBoard(boardSize, onChangeBoardSize) {
         })
 
         setCards(buildDeck(animalGifMap))
-    }, [allGifsSettled])
+    }, [allGifsSettled, animals])
 
     const changeBoardSize = useCallback(
         (size) => {
