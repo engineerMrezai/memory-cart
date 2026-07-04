@@ -8,7 +8,7 @@ import { useLocalStorage } from './hooks/useLocalStorage.js'
 import './App.css'
 
 function App() {
-  const [boardSize, setBoardSize] = useLocalStorage('memory-safari.board-size', 0)
+  const [boardSize, setBoardSize] = useLocalStorage('memory-card.board-size', 0)
   const [isSettingsOpen, setIsSettingsOpen] = useState(false)
   const game = useGameBoard(boardSize, setBoardSize)
 
